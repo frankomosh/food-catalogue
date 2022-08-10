@@ -11,7 +11,7 @@ const Home = () => {
   }, [query]); 
 
   const getFood = async () => {
-    const response = await fetch("https://fcatalogue.herokuapp.com/");
+    const response = await fetch("https://myfood578.herokuapp.com/meal");
     const data = await response.json();
     setFood(data);
   };
